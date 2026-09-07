@@ -1,5 +1,26 @@
 <!DOCTYPE html>
 <html lang="id">
+  <!-- Bagian Footer HTML -->
+<footer>
+  <p>&copy; <span id="year"></span> Warung Jawa. All rights reserved.</p>
+</footer>
+
+<!-- Styling CSS Sederhana -->
+<style>
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+  }
+</style>
+
+<!-- JavaScript untuk Tahun Otomatis -->
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
