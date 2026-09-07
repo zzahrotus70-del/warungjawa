@@ -128,6 +128,25 @@
     .card-btn:hover {
       opacity: 0.9;
     }
+
+    /* Styling Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    footer a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -186,6 +205,12 @@
     </div>
   </main>
 
+  <!-- Bagian Footer HTML -->
+  <footer>
+    <p>&copy; <span id="year"></span> Zahrotus Zita. All rights reserved.</p>
+    <p>Hubungi Kami: <a href="tel:+6285749119413">+62 857-4911-9413</a></p>
+  </footer>
+
   <script>
     let count = 0;
     function addToCart() {
@@ -196,45 +221,10 @@
     function checkout() {
       alert('Total barang di keranjang: ' + count);
     }
+
+    // Set tahun otomatis di footer
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-<style>
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    font-size: 14px;
-  }
-</style>
 
-
-<!-- Bagian Footer HTML -->
-<footer>
-  <p>&copy; Zahrotus Zita. All rights reserved.</p>
-  <p>Hubungi Kami: <a href="tel:+62857-4911-9413">+62 857-4911-9413</a></p>
-</footer>
-
-<!-- Styling CSS -->
-<style>
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  footer a {
-    color: #4da6ff;
-    text-decoration: none;
-  }
-
-  footer a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-  </body>
+</body>
 </html>
-
